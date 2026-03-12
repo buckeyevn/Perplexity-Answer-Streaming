@@ -1,0 +1,25 @@
+{
+  "name": "pplx-answer-streaming",
+  "version": "3.1.0",
+  "description": "Streaming answer generation with inline citation grounding",
+  "author": "Perplexity AI Core Team",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/api/server.js",
+    "dev": "node --watch src/api/server.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --config jest.config.json",
+    "example": "node examples/stream_answer.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.36.3",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
